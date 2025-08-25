@@ -56,8 +56,8 @@ export default function HomePage() {
                 <div className="p-6">
                     {/* Header */}
                     <div className="mb-8">
-                        <h1 className="text-3xl font-bold text-white mb-2">Good evening</h1>
-                        <p className="text-gray-400">Welcome back to your music</p>
+                        <h1 className="text-3xl font-bold text-white mb-2">Hello</h1>
+                        <p className="text-gray-400">Welcome back to your ads</p>
                     </div>
 
                     {/* Featured Section */}
