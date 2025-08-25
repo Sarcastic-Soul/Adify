@@ -1,4 +1,5 @@
-# Adify: Spotify but only ads...(so same as spotify free tier)
+# Adify: Spotify but only ads...
+### (so same as spotify free tier)
 
 Tired of those pesky 3-minute songs interrupting your 30-second ads on Spotify's free tier? Do you ever find yourself thinking, "I wish I could just listen to the ads without all this distracting music"?
 
