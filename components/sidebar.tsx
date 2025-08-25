@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Search, Library, Heart, User } from "lucide-react"
+import { Home, Search, Heart, User } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useAuth } from "@/components/auth-provider"
@@ -23,7 +23,6 @@ export function Sidebar() {
   const navItems = [
     { href: "/", icon: Home, label: "Home" },
     { href: "/search", icon: Search, label: "Search" },
-    { href: "/library", icon: Library, label: "Your Library" },
   ]
 
   useEffect(() => {
@@ -55,9 +54,9 @@ export function Sidebar() {
       <div className="p-6">
         <div className="flex items-center gap-2 mb-8">
           <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-            <span className="text-black font-bold text-sm">S</span>
+            <span className="text-black font-bold text-sm">A</span>
           </div>
-          <span className="text-white font-bold text-xl">Spotify</span>
+          <span className="text-white font-bold text-xl">Adify</span>
         </div>
 
         <nav className="space-y-2">

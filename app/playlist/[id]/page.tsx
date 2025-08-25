@@ -53,8 +53,7 @@ export default async function PlaylistPage({ params }: PlaylistPageProps) {
       *,
       song:songs(
         *,
-        artist:artists(name),
-        album:albums(title)
+        artist:artists(name)
       )
     `
         )

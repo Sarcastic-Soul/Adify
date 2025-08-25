@@ -37,12 +37,12 @@ CREATE POLICY "Users can delete own playlists" ON public.playlists
 -- Playlist songs policies
 CREATE POLICY "Users can view playlist songs for accessible playlists" ON public.playlist_songs 
   FOR SELECT USING (
-    EXISTS (
-      SELECT 1 FROM public.playlists 
-      WHERE playlists.id = playlist_songs.playlist_id 
-      AND (playlists.is_public = true OR playlists.user_id = auth.uid())
-    )
-  );
+     EXISTS (
+     SELECT 1 FROM public.playlists
+     WHERE playlists.id = playlist_songs.playlist_id
+     AND (playlists.is_public = true OR playlists.user_id = auth.uid())
+  )
+);
 CREATE POLICY "Users can manage songs in own playlists" ON public.playlist_songs 
   FOR ALL USING (
     EXISTS (
