@@ -1,7 +1,3 @@
-Of course. Here is a sarcastic and funny README for your project.
-
------
-
 # Adify: The Spotify Experience You Didn't Ask For
 
 Tired of those pesky 3-minute songs interrupting your 30-second ads on Spotify's free tier? Do you ever find yourself thinking, "I wish I could just listen to the ads without all this distracting music"?
