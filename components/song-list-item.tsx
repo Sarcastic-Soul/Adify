@@ -15,6 +15,7 @@ interface Song {
     audio_url: string
     cover_url?: string
     genre?: string
+    play_count?: number
     artist?: {
         name: string
     }
@@ -91,7 +92,8 @@ export function SongListItem({ song, queue = [], index, showCover = true }: Song
             </div>
 
             {/* Duration and actions */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
+                <span className="text-gray-400 text-sm w-16 text-right">{song.play_count ? song.play_count.toLocaleString() : 0}</span>
                 <LikeButton songId={song.id} />
 
                 <span className="text-gray-400 text-sm">{formatDuration(song.duration)}</span>
