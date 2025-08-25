@@ -42,7 +42,6 @@ export default async function PlaylistPage({ params }: PlaylistPageProps) {
 
     // Check if user can access this playlist
     if (!playlist.is_public && playlist.user_id !== user.user.id) {
-        // console.log("errror2");
         notFound();
     }
 
